@@ -1,0 +1,102 @@
+.recContainer {
+  margin-left: 700px;
+  margin-top: 200px;
+}
+
+.questionForm {
+  height: 2000px;
+  display: flex;
+  flex-direction: column;
+}
+.TripQuestion {
+  font-size: 2rem;
+}
+.trip-question-title {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.question-number {
+  border: 1px black;
+  border-radius: 100%;
+  background-color: red;
+  height: 35px;
+  width: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 10px;
+}
+.Trip-icon {
+  font-size: 3rem;
+}
+.questions {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 400px;
+  width: 1000px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 5px 10px, rgba(0, 0, 0, 0.23) 0px 2px 2px;
+}
+.optionsList {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+}
+.hidebx {
+  display: none;
+}
+.options {
+  display: flex;
+  width: 100%;
+  justify-content: space-evenly;
+}
+.label {
+  border: 1px black;
+  border-radius: 20px;
+  height: 150px;
+  width: 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: rgb(139, 178, 213);
+  box-shadow: 0px 4px 12px -4px rgba(0, 0, 0, 0.35);
+  cursor: pointer;
+  transition: all 0.01s ease-in;
+  position: relative;
+}
+.label p {
+  font-size: 1.2rem;
+}
+.catergory {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: rgb(54, 95, 121);
+}
+#option-1:checked ~ .label-1,
+#option-2:checked ~ .label-2,
+#option-3:checked ~ .label-3,
+#option-4:checked ~ .label-4 {
+  background-color: blue;
+  color: white;
+}
+
+#option2-1:checked ~ .label-Q2-1,
+#option2-2:checked ~ .label-Q2-2 {
+  background-color: blue;
+  color: white;
+}
+#venue-location {
+  height: 50px;
+  width: 600px;
+  border-radius: 25px;
+  border-style: none;
+  background-color: grey;
+  font-size: 1.2rem;
+}
+#venue-location::after {
+  cursor: pointer;
+  border-style: none;
+}

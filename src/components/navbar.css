@@ -1,0 +1,56 @@
+.navContainer {
+  width: 400px;
+  height: 100vh;
+  background-color: rgb(238, 205, 205);
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  position: fixed;
+}
+.titleLeft {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: column;
+  height: 100%;
+  width: 300px;
+}
+.titleLeft h2 {
+  width: 200px;
+}
+.List {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 500px;
+}
+.titleList {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 250px;
+}
+.titleList a {
+  font-size: 1.5rem;
+}
+.titleList a:link {
+  text-decoration: none;
+}
+.titleList a:active {
+  color: black;
+}
+.icon {
+  font-size: 1.5rem;
+  margin-right: 30px;
+  padding-left: 30px;
+}
+.signOutBtn {
+  height: 40px;
+  width: 120px;
+  border-radius: 10px;
+  border-style: none;
+  background-color: rgba(92, 87, 87, 0.6);
+  color: white;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
