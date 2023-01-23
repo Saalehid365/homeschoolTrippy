@@ -32,10 +32,7 @@ export const Navbar = () => {
             <FaLightbulb className="icon" />
             <Link to="/recommendations">recommendations</Link>
           </div>
-          <div className="titleList">
-            <FaUserAlt className="icon" />
-            <Link to="/userProfile">profile</Link>
-          </div>
+
           <SignOut />
         </div>
       </div>

@@ -1,15 +1,23 @@
 .recContainer {
-  margin-left: 700px;
-  margin-top: 200px;
-}
+  margin-top: 100px;
+  margin-left: 300px;
+  display: flex;
+  flex-direction: column;
 
+  align-items: center;
+}
+.trip-questions {
+  font-size: 4rem;
+  margin-bottom: 50px;
+  font-weight: 600;
+}
 .questionForm {
   height: 2000px;
   display: flex;
   flex-direction: column;
 }
 .TripQuestion {
-  font-size: 2rem;
+  font-size: 1.5rem;
 }
 .trip-question-title {
   display: flex;
@@ -17,18 +25,18 @@
   align-items: center;
 }
 .question-number {
-  border: 1px black;
+  border: 1px solid black;
   border-radius: 100%;
-  background-color: red;
-  height: 35px;
-  width: 35px;
+
+  height: 30px;
+  width: 30px;
   display: flex;
   justify-content: center;
   align-items: center;
   margin-right: 10px;
 }
 .Trip-icon {
-  font-size: 3rem;
+  font-size: 2rem;
 }
 .questions {
   display: flex;
@@ -55,7 +63,7 @@
 .label {
   border: 1px black;
   border-radius: 20px;
-  height: 150px;
+  height: 120px;
   width: 150px;
   display: flex;
   flex-direction: column;
@@ -79,13 +87,13 @@
 #option-2:checked ~ .label-2,
 #option-3:checked ~ .label-3,
 #option-4:checked ~ .label-4 {
-  background-color: blue;
+  background-color: rgb(106, 106, 157);
   color: white;
 }
 
 #option2-1:checked ~ .label-Q2-1,
 #option2-2:checked ~ .label-Q2-2 {
-  background-color: blue;
+  background-color: rgb(106, 106, 157);
   color: white;
 }
 #venue-location {
@@ -93,10 +101,99 @@
   width: 600px;
   border-radius: 25px;
   border-style: none;
-  background-color: grey;
+  background-color: rgba(128, 128, 128, 0.483);
+  padding-left: 20px;
+
+  font-size: 1.4rem;
+}
+.date-picker {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-evenly;
+  width: 100%;
+}
+.date-picker-date input {
+  width: 400px;
+  height: 50px;
+  border-radius: 10px;
+  background-color: rgba(128, 128, 128, 0.483);
+  border: 0.1px;
+  margin-top: 10px;
+  padding: 0 10px;
+  font-size: 1rem;
+}
+.date-picker-date h1 {
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+.date-picker-date p {
+  font-weight: 600;
+}
+.time-picker-time input {
+  width: 100px;
+  height: 50px;
+  border-radius: 10px;
+  background-color: rgba(128, 128, 128, 0.483);
+  border: 0.1px;
+  margin-top: 10px;
+  padding: 0 10px;
+  font-size: 1rem;
+}
+.time-picker-time h1 {
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+.free-label {
+  height: 50px;
+  width: 50px;
+  background-color: rgb(139, 178, 213);
+  border-radius: 15px;
+}
+.cost-question {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+.cost-question-option {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+}
+
+.free-text {
+  margin-top: 50px;
+  font-weight: 600;
   font-size: 1.2rem;
 }
-#venue-location::after {
-  cursor: pointer;
+.cost input {
+  width: 200px;
+  height: 40px;
+  border-radius: 10px;
+  background-color: rgba(128, 128, 128, 0.483);
   border-style: none;
+  font-size: 1.2rem;
+  margin-top: 10px;
+}
+.cost p {
+  font-weight: 600;
+}
+.submitBtn {
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.submitBtn button {
+  height: 50px;
+  width: 300px;
+  border-radius: 15px;
+  border-style: none;
+  font-size: 1.2rem;
+  cursor: pointer;
+  background-color: rgb(139, 178, 213);
+}
+.submitBtn button:hover {
+  background-color: rgb(106, 106, 157);
 }
