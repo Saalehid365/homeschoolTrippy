@@ -2,6 +2,7 @@ import React from "react";
 import "../pages/upcomingTrips.css";
 
 import { FaTicketAlt, FaInfoCircle } from "react-icons/fa";
+import { TripDetailsModal } from "./tripDetailsModal";
 
 export const Trip = (props) => {
   const { location, activites, price, time, date, spaces } = props.data;

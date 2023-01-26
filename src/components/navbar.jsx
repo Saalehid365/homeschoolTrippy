@@ -8,32 +8,33 @@ import {
   FaArrowCircleLeft,
   FaHome,
 } from "react-icons/fa";
-import { SignOut } from "./signOut";
 
 export const Navbar = () => {
   return (
     <div className="navContainer">
       <div className="titleLeft">
-        <h2>HomeSchool Trippy</h2>
+        <h2>Home-Ed Trippers</h2>
         <div className="List">
           <div className="titleList">
-            <FaHome className="icon" />
+            <FaHome className="iconNav" />
             <Link to="/">Home</Link>
           </div>
           <div className="titleList">
-            <FaCalendar className="icon" />
+            <FaCalendar className="iconNav" />
             <Link to="/upcomingtrip">upcoming trips</Link>
           </div>
           <div className="titleList">
-            <FaArrowCircleLeft className="icon" />
+            <FaArrowCircleLeft className="iconNav" />
             <Link>previous trips</Link>
           </div>
           <div className="titleList">
-            <FaLightbulb className="icon" />
+            <FaLightbulb className="iconNav" />
             <Link to="/recommendations">recommendations</Link>
           </div>
 
-          <SignOut />
+          <div className="signInBtn">
+            <Link to="/signIn">Sign in</Link>
+          </div>
         </div>
       </div>
     </div>

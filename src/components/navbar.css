@@ -15,7 +15,10 @@
   width: 300px;
 }
 .titleLeft h2 {
-  width: 200px;
+  width: 300px;
+  font-size: 4rem;
+  font-weight: 900;
+  margin-left: 100px;
 }
 .List {
   display: flex;
@@ -28,10 +31,11 @@
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  width: 250px;
+  width: 350px;
+  margin-left: 70px;
 }
 .titleList a {
-  font-size: 1.5rem;
+  font-size: 1.7rem;
 }
 .titleList a:link {
   text-decoration: none;
@@ -39,10 +43,10 @@
 .titleList a:active {
   color: black;
 }
-.icon {
-  font-size: 1.5rem;
-  margin-right: 30px;
-  padding-left: 30px;
+.iconNav {
+  font-size: 1.8rem;
+  margin-left: 30px;
+  margin-right: 50px;
 }
 .signOutBtn {
   height: 40px;

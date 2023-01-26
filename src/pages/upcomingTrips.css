@@ -73,3 +73,13 @@
 .cardBtnTicket {
   background-color: rgb(209, 125, 125);
 }
+
+.cardBtnDetails {
+  cursor: pointer;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.tripDetails {
+  cursor: pointer;
+  background-color: white;
+  border: none;
+}

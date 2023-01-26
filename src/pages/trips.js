@@ -1,13 +1,13 @@
 export const TRIPS = [
   {
     id: 1,
-    location: "blakesley Gardens",
-    activites: "crafting",
+    location: "Police Musuem",
+    activites: "Education",
     price: 4.99,
-    time: "12:00pm",
+    time: "10:00am",
     pindrop: "link",
-    spaces: 25,
-    date: "wednesday 18th January",
+    spaces: 15,
+    date: "wednesday 26th January",
   },
   {
     id: 1,
