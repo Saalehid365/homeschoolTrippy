@@ -11,10 +11,14 @@
   align-items: center;
   visibility: hidden;
   opacity: 0;
+  transition: 0.5s;
+  transform: scale(0.8);
 }
 .active {
   visibility: visible;
   opacity: 1;
+  transition: 0.3s;
+  transform: scale(1);
 }
 .modal {
   width: 60%;

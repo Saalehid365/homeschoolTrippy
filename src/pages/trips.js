@@ -1,7 +1,8 @@
 export const TRIPS = [
   {
     id: 1,
-    location: "Police Musuem",
+    event: "Steelhouse lane Police Musuem",
+    location: "Birmingham City Center",
     activites: "Education",
     price: 4.99,
     time: "10:00am",
@@ -11,9 +12,10 @@ export const TRIPS = [
   },
   {
     id: 1,
-    location: "oafield Gardens",
+    event: "oafield Gardens",
+    location: "South Yardley Birmingham",
     activites: "running",
-    price: 4.99,
+    price: "free",
     time: "12:00pm",
     pindrop: "link",
     spaces: 25,
@@ -21,7 +23,8 @@ export const TRIPS = [
   },
   {
     id: 1,
-    location: "library",
+    event: "cooking Studies Birmingham Library",
+    location: "Birmingham City Center",
     activites: "reading",
     price: 1.99,
     time: "12:00pm",
@@ -31,9 +34,10 @@ export const TRIPS = [
   },
   {
     id: 1,
-    location: "firestation",
+    event: "Health and saftey  Firestation",
+    location: "Garrets Green",
     activites: "safety",
-    price: 4.99,
+    price: "Free",
     time: "12:00pm",
     pindrop: "link",
     spaces: 25,
@@ -41,7 +45,8 @@ export const TRIPS = [
   },
   {
     id: 1,
-    location: "police station",
+    event: "strawberry planting summer season Allotments",
+    location: "Bordesley green Birmingham",
     activites: "saftey",
     price: 2.99,
     time: "12:00pm",
