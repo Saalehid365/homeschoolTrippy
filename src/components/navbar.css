@@ -1,7 +1,7 @@
 .navContainer {
   width: 400px;
   height: 100vh;
-  background-color: rgb(238, 205, 205);
+  background-color: rgb(151, 217, 248);
   border-top-left-radius: 10px;
   border-bottom-left-radius: 10px;
   position: fixed;
@@ -34,13 +34,21 @@
   width: 350px;
   margin-left: 70px;
 }
-.titleList a {
+.nav-link-list {
+  color: black;
+}
+.nav-link-list:hover {
+  color: rgba(255, 255, 255, 0.034);
+}
+.titleList {
   font-size: 1.7rem;
 }
 .titleList a:link {
   text-decoration: none;
+  color: black;
 }
 .titleList a:active {
+  text-decoration: none;
   color: black;
 }
 .iconNav {

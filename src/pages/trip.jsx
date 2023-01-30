@@ -10,12 +10,34 @@ import {
   FaThumbtack,
   FaRegClock,
   FaRegDotCircle,
+  FaInfo,
 } from "react-icons/fa";
 import { TripDetailsModal } from "./tripDetailsModal";
 
 export const Trip = (props) => {
-  const { location, activites, price, time, date, spaces, event } = props.data;
+  const {
+    location,
+    activity,
+    website,
+    address,
+    tel,
+    price,
+    time,
+    date,
+    spaces,
+    event,
+    id,
+  } = props.data;
   const [modalState, setModalState] = useState(false);
+
+  const datenumber = date.replace(/\D/g, "");
+
+  const myArray = date.split(" ");
+  const datemonth = myArray[2];
+  const monththree = datemonth.substring(0, 3);
+
+  console.log(monththree);
+
   function openModal() {
     setModalState(!modalState);
   }
@@ -26,10 +48,10 @@ export const Trip = (props) => {
         <div className="card-date">
           <div className="date-container">
             <div className="date-month">
-              <p>Jul</p>
+              <p>{monththree}</p>
             </div>
             <div className="date-day">
-              <p>10</p>
+              <p>{datenumber}</p>
             </div>
           </div>
         </div>
@@ -71,8 +93,26 @@ export const Trip = (props) => {
               <p className="cost-price">£{price}</p>
             )}
           </div>
+          <button className="more-info-btn" onClick={openModal}>
+            <FaInfo className="moreinfo-icon" /> More info
+          </button>
         </div>
       </div>
+      <TripDetailsModal
+        toggle={modalState}
+        action={openModal}
+        location={location}
+        event={event}
+        activity={activity}
+        price={price}
+        date={date}
+        spaces={spaces}
+        time={time}
+        website={website}
+        tel={tel}
+        address={address}
+        id={id}
+      />
       {/* <div className="cardBtns cardBtnTicket">
         <FaTicketAlt />
         <p>Buy ticket</p>
@@ -81,7 +121,7 @@ export const Trip = (props) => {
         <FaInfoCircle />
         <p>Details</p>
       </button>
-      <TripDetailsModal toggle={modalState} action={openModal} />/* */}
+      /* */}
     </div>
   );
 };

@@ -17,19 +17,25 @@ export const Navbar = () => {
         <div className="List">
           <div className="titleList">
             <FaHome className="iconNav" />
-            <Link to="/">Home</Link>
+            <Link className="nav-link-list" to="/">
+              Home
+            </Link>
           </div>
           <div className="titleList">
             <FaCalendar className="iconNav" />
-            <Link to="/upcomingtrip">upcoming trips</Link>
-          </div>
-          <div className="titleList">
-            <FaArrowCircleLeft className="iconNav" />
-            <Link>previous trips</Link>
+            <Link className="nav-link-list" to="/upcomingtrip">
+              upcoming trips
+            </Link>
           </div>
           <div className="titleList">
             <FaLightbulb className="iconNav" />
-            <Link to="/recommendations">recommendations</Link>
+            <Link className="nav-link-list" to="/recommendations">
+              recommendations
+            </Link>
+          </div>
+          <div className="titleList">
+            <FaArrowCircleLeft className="iconNav" />
+            <Link className="nav-link-list">previous trips</Link>
           </div>
 
           <div className="signInBtn">
