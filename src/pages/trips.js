@@ -40,7 +40,7 @@ export const TRIPS = [
     event: "Health and saftey  Firestation",
     location: "Garrets Green",
     activites: "safety",
-    price: "Free",
+    price: "free",
     time: "12:00pm",
     pindrop: "link",
     spaces: 25,

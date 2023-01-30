@@ -166,16 +166,16 @@ export const Recommendations = () => {
               <input type="date" onChange={(e) => setDate(e.target.value)} />
             </div>
             <div className="date-picker-date">
-              <h1>selected Date : {date}</h1>
+              <p>selected Date : {date}</p>
             </div>
           </div>
           <div className="date-picker">
             <div className="time-picker-time">
-              <p>Date</p>
+              <p>Time</p>
               <input type="time" onChange={(e) => setTime(e.target.value)} />
             </div>
             <div className="time-picker-time">
-              <h1>start time : {time}</h1>
+              <p>start time : {time}</p>
             </div>
             <div className="time-picker-time">
               <p>Duration</p>
@@ -185,9 +185,9 @@ export const Recommendations = () => {
               />
             </div>
             <div className="time-picker-time">
-              <h1>
+              <p>
                 Duration: {duration} {duration && <>hr</>}{" "}
-              </h1>
+              </p>
             </div>
           </div>
         </div>
