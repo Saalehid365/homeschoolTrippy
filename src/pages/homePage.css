@@ -10,12 +10,12 @@
   height: 500px;
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
+  justify-content: space-around;
 }
 .more-info {
-  font-size: 2rem;
+  font-size: 1.8rem;
   font-weight: bold;
-  width: 300px;
+  width: 250px;
 }
 .more-info-text {
   font-size: 1.2rem;
