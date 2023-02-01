@@ -1,0 +1,9 @@
+.active {
+  visibility: visible;
+  opacity: 1;
+  transition: 0.3s;
+  transform: scale(1);
+}
+
+.hamburger-container {
+}

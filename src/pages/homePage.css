@@ -38,3 +38,20 @@
   margin-right: auto;
   width: 100%;
 }
+
+@media all and (max-width: 480px) {
+  .more-info {
+    font-size: 3rem;
+    width: 400px;
+  }
+  .home-container {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+  }
+  .custom-slide {
+    border-radius: 0px;
+    height: 100%;
+    width: 100%;
+  }
+}
