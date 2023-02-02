@@ -4,16 +4,17 @@ import { Link } from "react-router-dom";
 import "./hamburger.css";
 
 export const Hamburger = (props) => {
-  const hamburgerState = props.toggle;
+  const hamState = props.toggle;
   const action = props.action;
   return (
-    <div className={`hamburger-container ${hamburgerState ? "action" : ""} `}>
+    <div className="hamburger-container">
       <div className="hamburger-button-container">
         <button className="openClose" onClick={action}>
           <FaGripLines />
         </button>
       </div>
-      <div className="ham-navbar">
+      <div className={`ham-navbar ${hamState ? "active" : ""} `}>
+        <button onClick={action}>X</button>
         <Link className="nav-link-list" to="/">
           Home
         </Link>
