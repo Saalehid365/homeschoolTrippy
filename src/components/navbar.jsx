@@ -37,6 +37,8 @@ export const Navbar = () => {
             <FaArrowCircleLeft className="iconNav" />
             <Link className="nav-link-list">previous trips</Link>
           </div>
+          
+          
         </div>
       </div>
     </div>

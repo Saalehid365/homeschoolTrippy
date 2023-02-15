@@ -5,12 +5,13 @@
   height: 100vh;
 }
 .Home-title {
-  margin-left: 300px;
+  margin-left: 400px;
   width: 700px;
-  height: 500px;
+  height: 100vh;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: flex-end;
+  margin-bottom: 200px;
 }
 .more-info {
   font-size: 1.8rem;
@@ -22,8 +23,8 @@
   width: 500px;
 }
 .slideshow-container {
-  width: 400px;
-  height: 400px;
+  width: 700px;
+  height: 700px;
   border-radius: 30% 70% 70% 30% / 46% 35% 65% 54%;
   margin-right: 20px;
 }

@@ -6,6 +6,7 @@ import { HomePage } from "./pages/homePage";
 import { Recommendations } from "./pages/recommendations";
 import { Hamburger } from "./components/hamburger";
 import { useState } from "react";
+import { Createaccount } from "./pages/createaccount";
 
 function App() {
   const [hamState, setHamState] = useState(false);
@@ -17,9 +18,8 @@ function App() {
       <div className="container">
         <Router>
           <Navbar />
-          <Hamburger toggle={hamState} action={openHamburger} />
           <Routes>
-            <Route path="/" element={<HomePage />} />
+            <Route path="/" element={<Createaccount />} />
             <Route path="upcomingtrip" element={<UpcomingTrip />} />
             <Route path="recommendations" element={<Recommendations />} />
           </Routes>
