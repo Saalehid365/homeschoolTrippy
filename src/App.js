@@ -2,18 +2,14 @@ import "./App.css";
 import { Navbar } from "./components/navbar";
 import { UpcomingTrip } from "./pages/upcomingTrips";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import { HomePage } from "./pages/homePage";
 import { Recommendations } from "./pages/recommendations";
-import { Hamburger } from "./components/hamburger";
-import { useState } from "react";
 import { Createaccount } from "./pages/createaccount";
+import { AuthContextProvider } from "./context/shop-context";
 
 function App() {
-  const [hamState, setHamState] = useState(false);
-  function openHamburger() {
-    setHamState(!hamState);
-  }
+  
   return (
+    <AuthContextProvider>
     <div className="App">
       <div className="container">
         <Router>
@@ -26,6 +22,7 @@ function App() {
         </Router>
       </div>
     </div>
+    </AuthContextProvider>
   );
 }
 
